@@ -265,6 +265,300 @@
             margin-bottom: 16px;
         }
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ràdio Institut Sabadell</title>
+    <style>
+        /* Estils globals */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estils del logo */
+        .institute-logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .hero-logo {
+            height: 100px;
+            width: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo {
+            height: 60px;
+            width: auto;
+            margin-bottom: 1rem;
+        }
+
+        /* Estils de la navegació */
+        nav {
+            background-color: #1e293b;
+            padding: 1rem;
+            color: white;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        
+        .nav-logo-text {
+            color: white;
+            margin-left: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #2d3748;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #3b82f6;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            opacity: 1;
+        }
+
+        /* Mantenim els estils existents del container de podcasts */
+        .podcast-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Responsiu */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .institute-logo {
+                height: 40px;
+            }
+
+            .hero-logo {
+                height: 80px;
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+        }
+    </style>
+    
+    <style>
+        .podcast-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            margin-bottom: 30px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .podcast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .podcast-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .podcast-card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .podcast-image {
+            width: 100%;
+            height: 160px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+
+        .podcast-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #1e293b;
+        }
+
+        .podcast-description {
+            color: #64748b;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .podcast-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .podcast-students {
+            margin-bottom: 16px;
+        }
+
+        .students-label {
+            font-size: 12px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .students-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .student-name {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
         .podcast-controls {
             display: flex;
             flex-direction: column;
@@ -439,6 +733,7 @@
             card.setAttribute('data-title', podcast.getElementsByTagName('title')[0].textContent);
             card.setAttribute('data-group', podcast.getElementsByTagName('group')[0].textContent);
             card.setAttribute('data-tags', tags.join(' ').toLowerCase());
+            card.setAttribute('data-students', students.join(' ').toLowerCase());
 
             card.innerHTML = `
                 <img src="${podcast.getElementsByTagName('image')[0].textContent}" 
@@ -452,6 +747,12 @@
                 <div class="podcast-meta">
                     <span>${podcast.getElementsByTagName('duration')[0].textContent}</span>
                     <span>${podcast.getElementsByTagName('group')[0].textContent}</span>
+                </div>
+                <div class="podcast-students">
+                    <div class="students-label">Participants</div>
+                    <div class="students-list">
+                        ${students.map(student => `<span class="student-name">${student}</span>`).join('')}
+                    </div>
                 </div>
                 <div class="podcast-controls">
                     <audio controls class="audio-player">
@@ -484,10 +785,12 @@
                 const title = card.getAttribute('data-title').toLowerCase();
                 const group = card.getAttribute('data-group').toLowerCase();
                 const tags = card.getAttribute('data-tags').toLowerCase();
+                const students = card.getAttribute('data-students').toLowerCase();
                 
                 if (title.includes(searchTerm) || 
                     group.includes(searchTerm) || 
-                    tags.includes(searchTerm)) {
+                    tags.includes(searchTerm) ||
+                    students.includes(searchTerm)) {
                     card.style.display = 'block';
                     hasResults = true;
                 } else {
