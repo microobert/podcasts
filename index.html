@@ -728,6 +728,9 @@
             const tags = Array.from(podcast.getElementsByTagName('tag'))
                 .map(tag => tag.textContent);
             
+            const students = Array.from(podcast.getElementsByTagName('student'))
+                .map(student => student.textContent);
+            
             const card = document.createElement('div');
             card.className = 'podcast-card';
             card.setAttribute('data-title', podcast.getElementsByTagName('title')[0].textContent);
