@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ràdio Institut Sabadell</title>
+    <style>
+        /* Estils globals */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estils del logo */
+        .institute-logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .hero-logo {
+            height: 100px;
+            width: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo {
+            height: 60px;
+            width: auto;
+            margin-bottom: 1rem;
+        }
+
+        /* Estils de la navegació */
+        nav {
+            background-color: #1e293b;
+            padding: 1rem;
+            color: white;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        
+        .nav-logo-text {
+            color: white;
+            margin-left: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #2d3748;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #3b82f6;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            opacity: 1;
+        }
+
+        /* Mantenim els estils existents del container de podcasts */
+        .podcast-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Responsiu */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .institute-logo {
+                height: 40px;
+            }
+
+            .hero-logo {
+                height: 80px;
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+        }
+    </style>
+    
+    <style>
+        .podcast-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            margin-bottom: 30px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .podcast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .podcast-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .podcast-card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .podcast-image {
+            width: 100%;
+            height: 160px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+
+        .podcast-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #1e293b;
+        }
+
+        .podcast-description {
+            color: #64748b;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .podcast-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .podcast-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .audio-player {
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        .drive-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .drive-button:hover {
+            background-color: #2563eb;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #f1f5f9;
+            color: #64748b;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+   <!-- Navegació -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg class="institute-logo" viewBox="0 0 400 200">
+                    <path d="M40 40 L100 100 L160 40 L220 100 L280 40 L340 100" 
+                          stroke="#00A0E3" 
+                          stroke-width="20" 
+                          fill="none" 
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                <span class="nav-logo-text">Ràdio Institut Sabadell</span>
+            </a>
+            <div class="nav-links">
+                <a href="#">Inici</a>
+                <a href="#">Programes</a>
+                <a href="#">Sobre Nosaltres</a>
+                <a href="#">Contacte</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <svg class="hero-logo" viewBox="0 0 400 200">
+            <path d="M40 40 L100 100 L160 40 L220 100 L280 40 L340 100" 
+                  stroke="#FFFFFF" 
+                  stroke-width="20" 
+                  fill="none" 
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <text x="40" y="160" 
+                  font-family="Arial, sans-serif" 
+                  font-size="48" 
+                  fill="#FFFFFF">
+                Institut Sabadell
+            </text>
+        </svg>
+        <h1>Els Nostres Pòdcasts</h1>
+        <p>Descobreix els programes creats pels alumnes de l'Institut Sabadell. Una col·lecció única de continguts sobre cultura, actualitat i molt més.</p>
+    </section>
+    
+    <div class="podcast-container">
+        <div class="header">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+            </svg>
+            <h1>Els Nostres Pòdcasts</h1>
+        </div>
+
+        <div class="search-container">
+            <input type="text" 
+                   class="search-input" 
+                   placeholder="Cerca per títol, grup o tema..."
+                   oninput="filterPodcasts(this.value)">
+        </div>
+
+        <div class="podcast-grid" id="podcastGrid"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <!-- Logo de l'institut al footer -->
+                <svg class="footer-logo" viewBox="0 0 400 200">
+                    <path d="M40 40 L100 100 L160 40 L220 100 L280 40 L340 100" 
+                          stroke="#00A0E3" 
+                          stroke-width="20" 
+                          fill="none" 
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <text x="40" y="160" 
+                          font-family="Arial, sans-serif" 
+                          font-size="48" 
+                          fill="#FFFFFF">
+                        Institut Sabadell
+                    </text>
+                </svg>
+                <p>Aquest projecte de ràdio escolar ha estat desenvolupat pels alumnes de l'Institut Sabadell com a part del seu aprenentatge en mitjans de comunicació digitals.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces d'Interès</h3>
+                <ul>
+                    <li><a href="#">Institut Sabadell</a></li>
+                    <li><a href="#">Blog de l'Institut</a></li>
+                    <li><a href="#">Altres Projectes</a></li>
+                    <li><a href="#">Contacta'ns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Segueix-nos</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Funció per carregar i parsejar l'XML
+        async function loadPodcasts() {
+            try {
+                const response = await fetch('podcasts.xml');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const xmlText = await response.text();
+                console.log("XML rebut:", xmlText); // 💡 Comprova si l'XML és correcte
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+                return xmlDoc;
+            } catch (error) {
+                console.error('Error carregant els pòdcasts:', error);
+                return null;
+            }
+        }
+
+        // Funció per crear una targeta de pòdcast
+        function createPodcastCard(podcast) {
+            const tags = Array.from(podcast.getElementsByTagName('tag'))
+                .map(tag => tag.textContent);
+            
+            const card = document.createElement('div');
+            card.className = 'podcast-card';
+            card.setAttribute('data-title', podcast.getElementsByTagName('title')[0].textContent);
+            card.setAttribute('data-group', podcast.getElementsByTagName('group')[0].textContent);
+            card.setAttribute('data-tags', tags.join(' ').toLowerCase());
+
+            card.innerHTML = `
+                <img src="${podcast.getElementsByTagName('image')[0].textContent}" 
+                     alt="Imatge del pòdcast" 
+                     class="podcast-image">
+                <div class="tags">
+                    ${tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+                <div class="podcast-title">${podcast.getElementsByTagName('title')[0].textContent}</div>
+                <div class="podcast-description">${podcast.getElementsByTagName('description')[0].textContent}</div>
+                <div class="podcast-meta">
+                    <span>${podcast.getElementsByTagName('duration')[0].textContent}</span>
+                    <span>${podcast.getElementsByTagName('group')[0].textContent}</span>
+                </div>
+                <div class="podcast-controls">
+                    <audio controls class="audio-player">
+                        <source src="${podcast.getElementsByTagName('audioUrl')[0].textContent}" type="audio/mpeg">
+                        El teu navegador no suporta l'element d'àudio.
+                    </audio>
+                    <a href="${podcast.getElementsByTagName('driveUrl')[0].textContent}" 
+                       target="_blank" 
+                       class="drive-button">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
+                            <path d="M7 11l5 5 5-5"></path>
+                            <path d="M12 4v12"></path>
+                        </svg>
+                        Descarrega des de Drive
+                    </a>
+                </div>
+            `;
+
+            return card;
+        }
+
+        // Funció per filtrar els pòdcasts
+        function filterPodcasts(searchTerm) {
+            searchTerm = searchTerm.toLowerCase();
+            const cards = document.querySelectorAll('.podcast-card');
+            let hasResults = false;
+
+            cards.forEach(card => {
+                const title = card.getAttribute('data-title').toLowerCase();
+                const group = card.getAttribute('data-group').toLowerCase();
+                const tags = card.getAttribute('data-tags').toLowerCase();
+                
+                if (title.includes(searchTerm) || 
+                    group.includes(searchTerm) || 
+                    tags.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    hasResults = true;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            const noResults = document.querySelector('.no-results');
+            if (!hasResults) {
+                if (!noResults) {
+                    const message = document.createElement('div');
+                    message.className = 'no-results';
+                    message.textContent = 'No s\'han trobat pòdcasts que coincideixin amb la cerca.';
+                    document.getElementById('podcastGrid').appendChild(message);
+                }
+            } else if (noResults) {
+                noResults.remove();
+            }
+        }
+
+        // Inicialització
+        async function init() {
+            const xmlDoc = await loadPodcasts();
+            if (xmlDoc) {
+                const grid = document.getElementById('podcastGrid');
+                const podcasts = xmlDoc.getElementsByTagName('podcast');
+                console.log("Podcasts trobats:", podcasts.length);
+                
+                Array.from(podcasts).forEach(podcast => {
+                    const card = createPodcastCard(podcast);
+                    grid.appendChild(card);
+                });
+            }
+        }
+
+        // Carrega els pòdcasts quan la pàgina estigui llesta
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

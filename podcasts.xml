@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<podcasts>
+    <podcast>
+        <id>1</id>
+        <title>Rock vs. reguetó</title>
+        <description>Descripció Rock vs. reguetó.</description>
+        <duration>2:13</duration>
+        <date>desembre 2024</date>
+        <group>3r ESO</group>
+        <audioUrl>audio/Podcast1.mp3</audioUrl>
+        <driveUrl>audio/Podcast1.mp3</driveUrl>
+        <image>img/Podcast1.jpg</image>
+        <tags>
+            <tag>opinió</tag>
+            <tag>rock</tag>
+            <tag>reguetó</tag>
+        </tags>
+    </podcast>
+    <podcast>
+        <id>2</id>
+        <title>Sindicat d'estudiants a l'institut Sabadell</title>
+        <description>Descripció Sindicat d'estudiants a l'institut Sabadell.</description>
+        <duration>6:01</duration>
+        <date>novembre 2024</date>
+        <group>3r ESO</group>
+        <audioUrl>audio/Podcast2.mp3</audioUrl>
+        <driveUrl>audio/Podcast2.mp3</driveUrl>
+        <image>img/Podcast2.png</image>
+        <tags>
+            <tag>sindicat d'estudiants</tag>
+        </tags>
+    </podcast>
+    <podcast>
+        <id>3</id>
+        <title>Protestes per la nova selectivitat</title>
+        <description>Descripció Protestes per la nova selectivitat.</description>
+        <duration>2:32</duration>
+        <date>octubre 2024</date>
+        <group>3r ESO</group>
+        <audioUrl>audio/Podcast3.mp3</audioUrl>
+        <driveUrl>audio/Podcast3.mp3</driveUrl>
+        <image>img/Podcast3.jpg</image>
+        <tags>
+            <tag>manifestació</tag>
+            <tag>PAU2025</tag>
+        </tags>
+    </podcast>
+</podcasts>
