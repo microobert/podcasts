@@ -7,6 +7,10 @@
         <duration>2:13</duration>
         <date>desembre 2024</date>
         <group>3r ESO</group>
+        <students>
+            <student>Paula Reyes</student>
+            <student>Hugo Serrano</student>
+        </students>
         <audioUrl>audio/Podcast1.mp3</audioUrl>
         <driveUrl>audio/Podcast1.mp3</driveUrl>
         <image>img/Podcast1.jpg</image>
@@ -23,6 +27,10 @@
         <duration>6:01</duration>
         <date>novembre 2024</date>
         <group>3r ESO</group>
+        <students>
+            <student>Moha el Khayati</student>
+            <student>Nizar Jouhari</student>
+        </students>
         <audioUrl>audio/Podcast2.mp3</audioUrl>
         <driveUrl>audio/Podcast2.mp3</driveUrl>
         <image>img/Podcast2.png</image>
@@ -37,6 +45,10 @@
         <duration>2:32</duration>
         <date>octubre 2024</date>
         <group>3r ESO</group>
+        <students>
+            <student>Xavi Leal</student>
+            <student>Erik Ropero</student>
+        </students>
         <audioUrl>audio/Podcast3.mp3</audioUrl>
         <driveUrl>audio/Podcast3.mp3</driveUrl>
         <image>img/Podcast3.jpg</image>
