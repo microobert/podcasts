@@ -58,3 +58,23 @@
         </tags>
     </podcast>
 </podcasts>
+    <podcast>
+        <id>4</id>
+        <title>Xocolatada solidària</title>
+        <description>Descripció Protestes per la nova selectivitat.</description>
+        <duration>13:59</duration>
+        <date>gener 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Martina López Estrada</student>
+            <student>Mar Martínez Álvaro</student>
+        </students>
+        <audioUrl>audio/Podcast4.mp3</audioUrl>
+        <driveUrl>audio/Podcast4.mp3</driveUrl>
+        <image>img/Podcast4.jpg</image>
+        <tags>
+            <tag>xocolatada solidària</tag>
+            <tag>càncer </tag>
+        </tags>
+    </podcast>
+</podcasts>
