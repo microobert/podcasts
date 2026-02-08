@@ -76,4 +76,25 @@
             <tag>càncer</tag>
         </tags>
     </podcast>
+    <podcast>
+        <id>5</id>
+        <title>La Marató 2025</title>
+        <description>La Marató 2025</description>
+        <duration>7:07</duration>
+        <date>febrer 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Ainhoa Boyero</student>
+            <student>Idaira López</student>
+        </students>
+        <audioUrl>audio/Podcast5.mp3</audioUrl>
+        <driveUrl>audio/Podcast5.mp3</driveUrl>
+        <image>img/Podcast5.jpg</image>
+        <tags>
+            <tag>lamarató</tag>
+            <tag>càncer</tag>
+            <tag>ajuda</tag>
+            <tag>grua</tag>
+        </tags>
+    </podcast>
 </podcasts>
