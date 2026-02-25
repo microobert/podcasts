@@ -137,4 +137,24 @@
             <tag>Traducció</tag>
         </tags>
     </podcast>
+    <podcast>
+        <id>8</id>
+        <title>Cançons populars catalanes</title>
+        <description>Cançons populars calanes</description>
+        <duration>4:25</duration>
+        <date>Febrer 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Aarón Silva</student>
+            <student>Ruben Zambrana</student>
+        </students>
+        <audioUrl>audio/Podcast8.mp3</audioUrl>
+        <driveUrl>audio/Podcast8.mp3</driveUrl>
+        <image>img/Podcast8.jpg</image>
+        <tags>
+            <tag>Català</tag>
+            <tag>Cançons</tag>
+            <tag>Popular</tag>
+        </tags>
+    </podcast>
 </podcasts>
