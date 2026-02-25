@@ -97,7 +97,6 @@
             <tag>grua</tag>
         </tags>
     </podcast>
-</podcasts>
     <podcast>
         <id>6</id>
         <title>Nadal</title>
@@ -116,6 +115,26 @@
             <tag>nadal</tag>
             <tag>catalunya</tag>
             <tag>tradicions</tag>
+        </tags>
+    </podcast>
+    <podcast>
+        <id>7</id>
+        <title>Paraules intraduïbles</title>
+        <description>Paraules intraduïbles</description>
+        <duration>3:19</duration>
+        <date>Febrer 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Noa Montes</student>
+            <student>Natalia Sánchez</student>
+        </students>
+        <audioUrl>audio/Podcast7.mp3</audioUrl>
+        <driveUrl>audio/Podcast7.mp3</driveUrl>
+        <image>img/Podcast7.jpg</image>
+        <tags>
+            <tag>Català</tag>
+            <tag>Paraules</tag>
+            <tag>Traducció</tag>
         </tags>
     </podcast>
 </podcasts>
