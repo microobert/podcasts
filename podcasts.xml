@@ -157,4 +157,24 @@
             <tag>Popular</tag>
         </tags>
     </podcast>
+    <podcast>
+        <id>9</id>
+        <title>Cuina catalana</title>
+        <description>Cuina catalana</description>
+        <duration>4:25</duration>
+        <date>Febrer 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>León Cercós</student>
+            <student>Octavio Alonso</student>
+        </students>
+        <audioUrl>audio/Podcast9.mp3</audioUrl>
+        <driveUrl>audio/Podcast9.mp3</driveUrl>
+        <image>img/Podcast9.jpg</image>
+        <tags>
+            <tag>Catalunya</tag>
+            <tag>cuinacatalana</tag>
+            <tag>tradició</tag>
+        </tags>
+    </podcast>
 </podcasts>
