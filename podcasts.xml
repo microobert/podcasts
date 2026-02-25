@@ -98,3 +98,24 @@
         </tags>
     </podcast>
 </podcasts>
+    <podcast>
+        <id>5</id>
+        <title>Nadal</title>
+        <description>Nadal</description>
+        <duration>4:23</duration>
+        <date>Febrer 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Paula Fernández</student>
+            <student>Laia López</student>
+        </students>
+        <audioUrl>audio/Podcast6.mp3</audioUrl>
+        <driveUrl>audio/Podcast6.mp3</driveUrl>
+        <image>img/Podcast6.jpg</image>
+        <tags>
+            <tag>nadal</tag>
+            <tag>catalunya</tag>
+            <tag>tradicions</tag>
+        </tags>
+    </podcast>
+</podcasts>
