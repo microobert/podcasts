@@ -177,4 +177,105 @@
             <tag>tradició</tag>
         </tags>
     </podcast>
+    <podcast>
+        <id>10</id>
+        <title>Crims</title>
+        <description>Crims</description>
+        <duration>3:42</duration>
+        <date>Març 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Ainhoa Boyero</student>
+            <student>Idaria López</student>
+            <student>Anna Goris</student>
+        </students>
+        <audioUrl>audio/Podcast10.mp3</audioUrl>
+        <driveUrl>audio/Podcast10.mp3</driveUrl>
+        <image>img/Podcast10.jpg</image>
+        <tags>
+            <tag>TV3</tag>
+            <tag>Crims</tag>
+            <tag>Misteri</tag>
+        </tags>
+    </podcast>
+    <podcast>
+        <id>11</id>
+        <title>Viatge gastronòmic per Espanya</title>
+        <description>Viatge gastronòmic per Espanya</description>
+        <duration>3:42</duration>
+        <date>Març 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Álvaro Guirado</student>
+            <student>Dani Sanz</student>
+            <student>Íker Redondo</student>
+        </students>
+        <audioUrl>audio/Podcast11.mp3</audioUrl>
+        <driveUrl>audio/Podcast11.mp3</driveUrl>
+        <image>img/Podcast11.jpg</image>
+        <tags>
+            <tag>Viatge</tag>
+            <tag>Gastronomia</tag>
+            <tag>Espanya</tag>
+        </tags>
+    </podcast>
+    <podcast>
+        <id>12</id>
+        <title>Sant Jordi</title>
+        <description>Sant Jordi</description>
+        <duration>8:11</duration>
+        <date>Març 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Valeria Peinado</student>
+            <student>Ariadna Sanz</student>
+        </students>
+        <audioUrl>audio/Podcast12.mp3</audioUrl>
+        <driveUrl>audio/Podcast12.mp3</driveUrl>
+        <image>img/Podcast12.png</image>
+        <tags>
+            <tag>Sant Jordi</tag>
+            <tag>Tradicions</tag>
+            <tag>Llibres</tag>
+            <tag>Lectura</tag>
+        </tags>
+    </podcast>
+    <podcast>
+        <id>13</id>
+        <title>Les ultradretes</title>
+        <description>Política de ultradretes</description>
+        <duration>3:38</duration>
+        <date>Març 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Laia López</student>
+            <student>Paula Fernéndez</student>
+        </students>
+        <audioUrl>audio/Podcast13.mp3</audioUrl>
+        <driveUrl>audio/Podcast13.mp3</driveUrl>
+        <image>img/Podcast13.jpg</image>
+        <tags>
+            <tag>Política</tag>
+            <tag>Ultradretes</tag>
+        </tags>
+    </podcast>
+    <podcast>
+        <id>14</id>
+        <title>Mites i llegendes</title>
+        <description>Política de ultradretes</description>
+        <duration>4:10</duration>
+        <date>Març 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Nayara Menacho</student>
+            <student>Carla Rueda</student>
+        </students>
+        <audioUrl>audio/Podcast14.mp3</audioUrl>
+        <driveUrl>audio/Podcast14.mp3</driveUrl>
+        <image>img/Podcast14.jpg</image>
+        <tags>
+            <tag>llegendes</tag>
+            <tag>Catalunya</tag>
+        </tags>
+    </podcast>
 </podcasts>
