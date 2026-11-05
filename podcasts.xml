@@ -297,4 +297,23 @@
             <tag>Xarxes socials</tag>
         </tags>
     </podcast>
+    <podcast>
+        <id>16</id>
+        <title>Món rural</title>
+        <description>Descobrir el món rural</description>
+        <duration>4:48</duration>
+        <date>Novembre 2026</date>
+        <group>1r Batxillerat</group>
+        <students>
+            <student>Octavio Alonso</student>
+            <student>León Cercós</student>
+        </students>
+        <audioUrl>audio/podcast16.avi</audioUrl>
+        <driveUrl>audio/podcast16.avi</driveUrl>
+        <image>img/podcast16.jpg</image>
+        <tags>
+            <tag>Món rural</tag>
+            <tag>Catalunya</tag>
+        </tags>
+    </podcast>
 </podcasts>
