@@ -316,4 +316,23 @@
             <tag>Catalunya</tag>
         </tags>
     </podcast>
+    <podcast>
+        <id>17</id>
+        <title>Les coses inútils que aprenem a l'institut</title>
+        <description>Les coses inútils que aprenem a l'institut</description>
+        <duration>1:58</duration>
+        <date>Novembre 2026</date>
+        <group>1r Batxillerat</group>
+        <students>
+            <student>Oussama Baidder</student>
+            <student>Oscar Sánchez</student>
+        </students>
+        <audioUrl>audio/podcast17.mp4</audioUrl>
+        <driveUrl>audio/podcast17.mp4</driveUrl>
+        <image>img/podcast17.jpg</image>
+        <tags>
+            <tag>Inútil</tag>
+            <tag>Institut</tag>
+        </tags>
+    </podcast>
 </podcasts>
