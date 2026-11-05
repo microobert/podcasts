@@ -278,4 +278,23 @@
             <tag>Catalunya</tag>
         </tags>
     </podcast>
+    <podcast>
+        <id>15</id>
+        <title>Literatura i xarxes socials</title>
+        <description>La literatura a les xarxes socials</description>
+        <duration>6:10</duration>
+        <date>Març 2026</date>
+        <group>3r ESO</group>
+        <students>
+            <student>Carla Rueda</student>
+            <student>Nayara Menacho</student>
+        </students>
+        <audioUrl>audio/Podcast15.mp3</audioUrl>
+        <driveUrl>audio/Podcast15.mp3</driveUrl>
+        <image>img/Podcast15.jpg</image>
+        <tags>
+            <tag>Literatura</tag>
+            <tag>Xarxes socials</tag>
+        </tags>
+    </podcast>
 </podcasts>
