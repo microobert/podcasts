@@ -335,8 +335,7 @@
             <tag>Institut</tag>
         </tags>
     </podcast>
-</podcasts>
-<podcast>
+    <podcast>
         <id>17</id>
         <title>Professorat enfurismat</title>
         <description>Professorat enfurismat</description>
@@ -354,4 +353,5 @@
             <tag>professorat</tag>
             <tag>vaga</tag>
         </tags>
+    </podcast>
 </podcast>
