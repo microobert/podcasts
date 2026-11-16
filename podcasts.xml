@@ -336,7 +336,7 @@
         </tags>
     </podcast>
     <podcast>
-        <id>17</id>
+        <id>18</id>
         <title>Professorat enfurismat</title>
         <description>Professorat enfurismat</description>
         <duration>5:31</duration>
@@ -348,6 +348,25 @@
         </students>
         <audioUrl>audio/podcast18.mp4</audioUrl>
         <driveUrl>audio/podcast18.mp4</driveUrl>
+        <image>img/podcast18.jpg</image>
+        <tags>
+            <tag>professorat</tag>
+            <tag>vaga</tag>
+        </tags>
+    </podcast>
+    <podcast>
+        <id>19</id>
+        <title>El procés d'adaptació</title>
+        <description>El procés d'adaptació</description>
+        <duration>6:16</duration>
+        <date>Novembre 2026</date>
+        <group>1r Batxillerat</group>
+        <students>
+            <student>Lorelay Frenti</student>
+            <student>Fatma</student>
+        </students>
+        <audioUrl>audio/podcast19.mp4</audioUrl>
+        <driveUrl>audio/podcast19.mp4</driveUrl>
         <image>img/podcast18.jpg</image>
         <tags>
             <tag>professorat</tag>
