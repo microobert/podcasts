@@ -336,3 +336,22 @@
         </tags>
     </podcast>
 </podcasts>
+<podcast>
+        <id>17</id>
+        <title>Professorat enfurismat</title>
+        <description>Professorat enfurismat</description>
+        <duration>5:31</duration>
+        <date>Novembre 2026</date>
+        <group>1r Batxillerat</group>
+        <students>
+            <student>Xavi Leal</student>
+            <student>Lucía Vergel</student>
+        </students>
+        <audioUrl>audio/podcast18.mp4</audioUrl>
+        <driveUrl>audio/podcast18.mp4</driveUrl>
+        <image>img/podcast18.jpg</image>
+        <tags>
+            <tag>professorat</tag>
+            <tag>vaga</tag>
+        </tags>
+</podcast>
