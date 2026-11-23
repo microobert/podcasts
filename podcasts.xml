@@ -394,4 +394,24 @@
         </tags>
     </podcast>
 </podcast>
+    <podcast>
+        <id>21</id>
+        <title>Portàtils Generalitat</title>
+        <description>Portàtils Generalitat</description>
+        <duration>2:10</duration>
+        <date>Novembre 2026</date>
+        <group>1r Batxillerat</group>
+        <students>
+            <student>Oscar Sánchez</student>
+            <student>Oussama Baidder</student>
+        </students>
+        <audioUrl>audio/podcast21.mp4</audioUrl>
+        <driveUrl>audio/podcast21.mp4</driveUrl>
+        <image>img/podcast21.jpg</image>
+        <tags>
+            <tag>ordinadors</tag>
+            <tag>batxillerat</tag>
+        </tags>
+    </podcast>
+</podcast>
 </podcast>
