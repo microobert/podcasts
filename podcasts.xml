@@ -373,4 +373,25 @@
             <tag>llengua</tag>
         </tags>
     </podcast>
+     <podcast>
+        <id>20</id>
+        <title>Encaixem?</title>
+        <description>Encaixem?</description>
+        <duration>8:38</duration>
+        <date>Novembre 2026</date>
+        <group>1r Batxillerat</group>
+        <students>
+            <student>Sara Romero</student>
+            <student>Ana Manso</student>
+            <student>Paula Alentà</student>
+        </students>
+        <audioUrl>audio/podcast20.mp4</audioUrl>
+        <driveUrl>audio/podcast20.mp4</driveUrl>
+        <image>img/podcast20.png</image>
+        <tags>
+            <tag>siguestumateix</tag>
+            <tag>personalitat</tag>
+        </tags>
+    </podcast>
+</podcast>
 </podcast>
